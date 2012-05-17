@@ -1,8 +1,9 @@
 # A beginners class on Hackety Hack
 
-This is a presentation for a beginner's class on Hackety Hack.
+These are some slides for teaching a beginner's class on Hackety Hack.
 
-To show the presentation
+You can show the presentation
+[online](http://wasnotrice.github.com/class-hh-1/), or locally:
 
     $ open slides/slides.html
 
