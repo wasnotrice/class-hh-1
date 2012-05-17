@@ -2,7 +2,7 @@ require 'rake/clean'
 
 # Configuration
 # -------------
-SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text', 'slots']
+SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text', 'slots', 'art']
 SOURCE = FileList[*(SOURCE_DIRS.pathmap("%p/*.md"))]
 BUILD_DIR = 'slides'
 TARGET = "#{BUILD_DIR}/slides.html"
