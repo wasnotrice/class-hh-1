@@ -2,12 +2,12 @@ require 'rake/clean'
 
 # Configuration
 # -------------
-SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text']
+SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text', 'slots']
 SOURCE = FileList[*(SOURCE_DIRS.pathmap("%p/*.md"))]
 BUILD_DIR = 'slides'
 TARGET = "#{BUILD_DIR}/slides.html"
 STYLE = 'style.html'
-MEDIA = FileList["basics/*.{jpg,png}"]
+MEDIA = FileList[*(SOURCE_DIRS.pathmap("%p/*.{jpg,png}"))]
 CLEAN.include(BUILD_DIR)
 SLIDE_LEVEL = 2 # Headers above this are section dividers
 # --------------

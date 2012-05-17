@@ -28,7 +28,7 @@ para "and on"
 
 ---
 
-## Use different sizes ##
+## Available in 7 sizes ##
 
 ``` ruby
 banner "A banner"
