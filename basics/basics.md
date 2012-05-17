@@ -4,14 +4,16 @@
 
 # Hackety ♥ Shoes #
 
+---
+
+![](drawing-hands.jpg)
+
+## Start simple ##
+
 ``` ruby
 Shoes.app do
 end
 ```
-
----
-
-![](drawing-hands.jpg)
 
 ## Ok, so _do_ something ##
 
