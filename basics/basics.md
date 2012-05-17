@@ -9,6 +9,10 @@ Shoes.app do
 end
 ```
 
+---
+
+![](drawing-hands.jpg)
+
 # Yeah, but what does it _do?!_ #
 
 ``` ruby

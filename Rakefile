@@ -2,8 +2,8 @@ require 'rake/clean'
 
 # Configuration
 # -------------
-SOURCE = FileList['basics/basics.md', 'turtle.md']
-SOURCE_DIRS = FileList['basics']
+SOURCE = FileList['basics/basics.md', 'turtle/turtle.md']
+SOURCE_DIRS = FileList['basics', 'turtle']
 BUILD_DIR = 'slides'
 TARGET = "#{BUILD_DIR}/slides.html"
 STYLE = 'style.html'
@@ -19,7 +19,7 @@ desc "Build the presentation"
 task :build => [TARGET, :tidy]
 
 # Compile the slide
-file TARGET => BUILD_DIR do
+file TARGET => [BUILD_DIR, STYLE, *SOURCE] do
   sh "pandoc -t dzslides #{SOURCE.map { |f| "-s #{f}" }.join(" ") } -o #{TARGET} --highlight-style=pygments --include-after-body=#{STYLE}"
 end
 
