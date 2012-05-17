@@ -2,13 +2,14 @@ require 'rake/clean'
 
 # Configuration
 # -------------
-SOURCE = FileList['basics/basics.md', 'turtle/turtle.md']
-SOURCE_DIRS = FileList['basics', 'turtle']
+SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text']
+SOURCE = FileList[*(SOURCE_DIRS.pathmap("%p/*.md"))]
 BUILD_DIR = 'slides'
 TARGET = "#{BUILD_DIR}/slides.html"
 STYLE = 'style.html'
 MEDIA = FileList["basics/*.{jpg,png}"]
 CLEAN.include(BUILD_DIR)
+SLIDE_LEVEL = 2 # Headers above this are section dividers
 # --------------
 
 directory BUILD_DIR
@@ -20,7 +21,7 @@ task :build => [TARGET, :tidy]
 
 # Compile the slide
 file TARGET => [BUILD_DIR, STYLE, *SOURCE] do
-  sh "pandoc -t dzslides #{SOURCE.map { |f| "-s #{f}" }.join(" ") } -o #{TARGET} --highlight-style=pygments --include-after-body=#{STYLE}"
+  sh "pandoc -t dzslides #{SOURCE.map { |f| "-s #{f}" }.join(" ") } -o #{TARGET} --slide-level=#{SLIDE_LEVEL} --highlight-style=pygments --include-after-body=#{STYLE}"
 end
 
 # Copy media files into the build directory

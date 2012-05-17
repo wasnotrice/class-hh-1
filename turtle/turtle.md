@@ -1,18 +1,14 @@
-# Turtle Graphics #
+# Hackety ♥ Turtle #
 
-# Starburst #
+## Draw ##
 
 ``` ruby
 Turtle.start do
-  background black
-  pencolor white
-  100.times do
-    angle = rand(45)
-    distance = rand(100)
-    turnright angle
-    forward distance
-    backward distance
-  end
+  forward 100
+  turnleft 120
+  forward 100
+  turnleft 120
+  forward 100
 end
 ```
 

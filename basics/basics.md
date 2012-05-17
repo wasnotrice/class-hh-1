@@ -1,6 +1,6 @@
-# Hackety Hack! #
+# ![](hh-app-icon.png) #
 
-![](hh-app-icon.png)
+# Hackety Hack! #
 
 # Hackety ♥ Shoes #
 
@@ -13,7 +13,7 @@ end
 
 ![](drawing-hands.jpg)
 
-# Yeah, but what does it _do?!_ #
+## Ok, so _do_ something ##
 
 ``` ruby
 Shoes.app do
@@ -25,7 +25,7 @@ end
 
 ![](wonderful-things.png)
 
-# See errors #
+## See errors ##
 
 Control-/ (or Command-/)
 
@@ -33,7 +33,7 @@ Control-/ (or Command-/)
 
 ![](error-console.png)
 
-# Read the manual #
+## Read the manual ##
 
 Control-m (or Command-m)
 

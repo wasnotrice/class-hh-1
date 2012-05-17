@@ -94,71 +94,94 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </style>
 </head>
 <body>
-<section class="slide level1" id="hackety-hack">
-<h1>Hackety Hack!</h1>
-<figure>
-<img src="hh-app-icon.png"><figcaption></figcaption>
-</figure>
-</section>
-<section class="slide level1" id="hackety-shoes">
-<h1>Hackety ♥ Shoes</h1>
-<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="dt">Shoes</span>.app <span class="kw">do</span>
-<span class="kw">end</span></code></pre>
-</section>
-<section class="slide level1" id="section">
+<section class="titleslide slide level1" id="section"><h1><img src="hh-app-icon.png"></h1></section>
+<section class="titleslide slide level1" id="hackety-hack"><h1>Hackety Hack!</h1></section>
+<section class="titleslide slide level1" id="hackety-shoes"><h1>Hackety ♥ Shoes</h1></section><section class="slide level2" id="section-1">
 
 <figure>
 <img src="drawing-hands.jpg"><figcaption></figcaption>
 </figure>
-</section>
-<section class="slide level1" id="yeah-but-what-does-it-do">
-<h1>Yeah, but what does it <em>do?!</em></h1>
+</section><section class="slide level2" id="ok-so-do-something">
+<h1>Ok, so <em>do</em> something</h1>
 <pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="dt">Shoes</span>.app <span class="kw">do</span>
   banner <span class="st">&quot;Wonderful things&quot;</span>
 <span class="kw">end</span></code></pre>
-</section>
-<section class="slide level1" id="section-1">
+</section><section class="slide level2" id="section-2">
 
 <figure>
 <img src="wonderful-things.png"><figcaption></figcaption>
 </figure>
-</section>
-<section class="slide level1" id="see-errors">
+</section><section class="slide level2" id="see-errors">
 <h1>See errors</h1>
 <p>Control-/ (or Command-/)</p>
-</section>
-<section class="slide level1" id="section-2">
+</section><section class="slide level2" id="section-3">
 
 <figure>
 <img src="error-console.png"><figcaption></figcaption>
 </figure>
-</section>
-<section class="slide level1" id="read-the-manual">
+</section><section class="slide level2" id="read-the-manual">
 <h1>Read the manual</h1>
 <p>Control-m (or Command-m)</p>
-</section>
-<section class="slide level1" id="section-3">
+</section><section class="slide level2" id="section-4">
 
 <figure>
 <img src="manual.png"><figcaption></figcaption>
 </figure>
 </section>
-<section class="slide level1" id="turtle-graphics">
-<h1>Turtle Graphics</h1>
-</section>
-<section class="slide level1" id="starburst">
-<h1>Starburst</h1>
+<section class="titleslide slide level1" id="hackety-turtle"><h1>Hackety ♥ Turtle</h1></section><section class="slide level2" id="draw">
+<h1>Draw</h1>
 <pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="dt">Turtle</span>.start <span class="kw">do</span>
-  background black
-  pencolor white
-  <span class="dv">100</span>.times <span class="kw">do</span>
-    angle = rand(<span class="dv">45</span>)
-    distance = rand(<span class="dv">100</span>)
-    turnright angle
-    forward distance
-    backward distance
-  <span class="kw">end</span>
+  forward <span class="dv">100</span>
+  turnleft <span class="dv">120</span>
+  forward <span class="dv">100</span>
+  turnleft <span class="dv">120</span>
+  forward <span class="dv">100</span>
 <span class="kw">end</span></code></pre>
+</section>
+<section class="titleslide slide level1" id="hackety-buttons"><h1>Hackety ♥ Buttons</h1></section><section class="slide level2" id="saucy-buttons">
+<h1>Saucy buttons</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">button <span class="st">&quot;Don&#39;t click&quot;</span></code></pre>
+</section><section class="slide level2" id="ok-so-do-something-1">
+<h1>Ok, so <em>do</em> something</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">button <span class="st">&quot;Don&#39;t click&quot;</span> <span class="kw">do</span>
+  alert <span class="st">&quot;Hey! No fair!&quot;</span>
+<span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="be-the-button">
+<h1>Be the button</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">b = button <span class="st">&quot;Don&#39;t click&quot;</span> <span class="kw">do</span>
+  alert <span class="st">&quot;Fine. Bye.&quot;</span>
+  b.remove
+<span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="play-hard-to-get">
+<h1>Play hard to get</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">b = button <span class="st">&quot;:P&quot;</span> <span class="kw">do</span>
+  left = rand(width)
+  top = rand(height)
+  b.move left, top
+<span class="kw">end</span></code></pre>
+</section>
+<section class="titleslide slide level1" id="hackety-text"><h1>Hackety ♥ Text</h1></section><section class="slide level2" id="ask-and-you-shall-receive">
+<h1>Ask and you shall receive</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">ask <span class="st">&quot;What&#39;s your name?&quot;</span></code></pre>
+</section><section class="slide level2" id="section-5">
+
+<pre class="sourceCode ruby"><code class="sourceCode ruby">name = ask <span class="st">&quot;What&#39;s your name?&quot;</span>
+alert <span class="st">&quot;Hi &quot;</span> + name</code></pre>
+</section><section class="slide level2" id="section-6">
+
+<pre class="sourceCode ruby"><code class="sourceCode ruby">para <span class="st">&quot;Hello there.&quot;</span>
+para <span class="st">&quot;We could just go on&quot;</span>
+para <span class="st">&quot;and on&quot;</span>
+para <span class="st">&quot;and on&quot;</span></code></pre>
+</section><section class="slide level2" id="section-7">
+
+<pre class="sourceCode ruby"><code class="sourceCode ruby">banner <span class="st">&quot;A banner&quot;</span>
+title <span class="st">&quot;A title&quot;</span>
+subtitle <span class="st">&quot;A subtitle&quot;</span>
+tagline <span class="st">&quot;A tagline&quot;</span>
+caption <span class="st">&quot;A caption&quot;</span>
+para <span class="st">&quot;A para&quot;</span>
+inscription <span class="st">&quot;An inscription&quot;</span></code></pre>
 </section>
 <style>
   body {
@@ -167,7 +190,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 
   section {
     font-family: "PT Sans", verdana, sans-serif;
-    font-size: 36pt;
+    font-size: 30pt;
+  }
+
+  h1, h2, h3 {
+    color: #555;
   }
 
   figure {
