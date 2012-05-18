@@ -12,6 +12,10 @@ flow do
 end
 ```
 
+---
+
+![](flows-are-rivers.png)
+
 ## Stacks are towers ##
 
 ``` ruby
@@ -23,3 +27,7 @@ stack do
   title "jumped"
 end
 ```
+
+---
+
+![](stacks-are-towers.png)

@@ -40,3 +40,6 @@ para "A para"
 inscription "An inscription"
 ```
 
+---
+
+![](available-in-7-sizes.png)
