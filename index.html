@@ -115,17 +115,21 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <figure>
 <img src="wonderful-things.png"><figcaption></figcaption>
 </figure>
-</section><section class="slide level2" id="see-errors">
-<h1>See errors</h1>
-<p>Control-/ (or Command-/)</p>
+</section><section class="slide level2" id="when-things-go-wrong">
+<h1>When things go wrong</h1>
+<figure>
+<img src="console-menu.png"><figcaption></figcaption>
+</figure>
 </section><section class="slide level2" id="section-3">
 
 <figure>
 <img src="error-console.png"><figcaption></figcaption>
 </figure>
-</section><section class="slide level2" id="read-the-manual">
-<h1>Read the manual</h1>
-<p>Control-m (or Command-m)</p>
+</section><section class="slide level2" id="to-learn-more">
+<h1>To learn more</h1>
+<figure>
+<img src="manual-button.png"><figcaption></figcaption>
+</figure>
 </section><section class="slide level2" id="section-4">
 
 <figure>
@@ -135,34 +139,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section class="titleslide slide level1" id="hackety-turtle"><h1>Hackety ♥ Turtle</h1></section><section class="slide level2" id="draw">
 <h1>Draw</h1>
 <pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="dt">Turtle</span>.start <span class="kw">do</span>
-  forward <span class="dv">100</span>
-  turnleft <span class="dv">120</span>
-  forward <span class="dv">100</span>
-  turnleft <span class="dv">120</span>
-  forward <span class="dv">100</span>
+  <span class="dv">3</span>.times <span class="kw">do</span>
+    forward <span class="dv">100</span>
+    turnleft <span class="dv">120</span>
+  <span class="kw">end</span>
 <span class="kw">end</span></code></pre>
-</section>
-<section class="titleslide slide level1" id="hackety-buttons"><h1>Hackety ♥ Buttons</h1></section><section class="slide level2" id="saucy-buttons">
-<h1>Saucy buttons</h1>
-<pre class="sourceCode ruby"><code class="sourceCode ruby">button <span class="st">&quot;Don&#39;t click&quot;</span></code></pre>
-</section><section class="slide level2" id="ok-so-do-something-1">
-<h1>Ok, so <em>do</em> something</h1>
-<pre class="sourceCode ruby"><code class="sourceCode ruby">button <span class="st">&quot;Don&#39;t click&quot;</span> <span class="kw">do</span>
-  alert <span class="st">&quot;Hey! No fair!&quot;</span>
-<span class="kw">end</span></code></pre>
-</section><section class="slide level2" id="be-the-button">
-<h1>Be the button</h1>
-<pre class="sourceCode ruby"><code class="sourceCode ruby">b = button <span class="st">&quot;Don&#39;t click&quot;</span> <span class="kw">do</span>
-  alert <span class="st">&quot;Fine. Bye.&quot;</span>
-  b.remove
-<span class="kw">end</span></code></pre>
-</section><section class="slide level2" id="play-hard-to-get">
-<h1>Play hard to get</h1>
-<pre class="sourceCode ruby"><code class="sourceCode ruby">b = button <span class="st">&quot;:P&quot;</span> <span class="kw">do</span>
-  left = rand(width)
-  top = rand(height)
-  b.move left, top
-<span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="section-5">
+
+<figure>
+<img src="triangle.png"><figcaption></figcaption>
+</figure>
 </section>
 <section class="titleslide slide level1" id="hackety-text"><h1>Hackety ♥ Text</h1></section><section class="slide level2" id="ask-for-what-you-need">
 <h1>Ask for what you need</h1>
@@ -177,6 +163,11 @@ alert <span class="st">&quot;Hi &quot;</span> + name</code></pre>
 para <span class="st">&quot;We could just go on&quot;</span>
 para <span class="st">&quot;and on&quot;</span>
 para <span class="st">&quot;and on&quot;</span></code></pre>
+</section><section class="slide level2" id="section-6">
+
+<figure>
+<img src="on-and-on.png"><figcaption></figcaption>
+</figure>
 </section><section class="slide level2" id="available-in-7-sizes">
 <h1>Available in 7 sizes</h1>
 <pre class="sourceCode ruby"><code class="sourceCode ruby">banner <span class="st">&quot;A banner&quot;</span>
@@ -186,7 +177,7 @@ tagline <span class="st">&quot;A tagline&quot;</span>
 caption <span class="st">&quot;A caption&quot;</span>
 para <span class="st">&quot;A para&quot;</span>
 inscription <span class="st">&quot;An inscription&quot;</span></code></pre>
-</section><section class="slide level2" id="section-5">
+</section><section class="slide level2" id="section-7">
 
 <figure>
 <img src="available-in-7-sizes.png"><figcaption></figcaption>
@@ -201,7 +192,7 @@ inscription <span class="st">&quot;An inscription&quot;</span></code></pre>
   title <span class="st">&quot;fox&quot;</span>
   title <span class="st">&quot;jumped&quot;</span>
 <span class="kw">end</span></code></pre>
-</section><section class="slide level2" id="section-6">
+</section><section class="slide level2" id="section-8">
 
 <figure>
 <img src="flows-are-rivers.png"><figcaption></figcaption>
@@ -215,13 +206,126 @@ inscription <span class="st">&quot;An inscription&quot;</span></code></pre>
   title <span class="st">&quot;fox&quot;</span>
   title <span class="st">&quot;jumped&quot;</span>
 <span class="kw">end</span></code></pre>
-</section><section class="slide level2" id="section-7">
+</section><section class="slide level2" id="section-9">
 
 <figure>
 <img src="stacks-are-towers.png"><figcaption></figcaption>
 </figure>
+</section><section class="slide level2" id="slots-within-slots">
+<h1>Slots within slots</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  flow <span class="kw">do</span>
+    stack <span class="st">:width</span> =&gt; <span class="dv">200</span> <span class="kw">do</span>
+      subtitle <span class="st">&quot;Love&quot;</span>
+      para <span class="st">&quot;Frogs&quot;</span>
+      flow <span class="kw">do</span>
+        para <span class="st">&quot;Ice&quot;</span>
+        para <span class="st">&quot;cream&quot;</span>
+      <span class="kw">end</span>
+    <span class="kw">end</span> <span class="co"># continued...</span></code></pre>
+</section><section class="slide level2" id="slots-within-cont.">
+<h1>Slots within (cont.)</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">    stack <span class="st">:width</span> =&gt; <span class="dv">200</span> <span class="kw">do</span>
+      subtitle <span class="st">&quot;Hate&quot;</span>
+      para <span class="st">&quot;Roadkill&quot;</span>
+      para <span class="st">&quot;Bullies&quot;</span>
+    <span class="kw">end</span>
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="section-10">
+
+<figure>
+<img src="love-hate.png"><figcaption></figcaption>
+</figure>
 </section>
-<section class="titleslide slide level1" id="hackety-art"><h1>Hackety ♥ Art</h1></section>
+<section class="titleslide slide level1" id="hackety-buttons"><h1>Hackety ♥ Buttons</h1></section><section class="slide level2" id="hello-button">
+<h1>Hello button</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">button <span class="st">&quot;Hi&quot;</span></code></pre>
+</section><section class="slide level2" id="ok-so-do-something-1">
+<h1>Ok, so <em>do</em> something</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  title <span class="st">&quot;What did the zero&quot;</span>
+  title <span class="st">&quot;say to the eight?&quot;</span>
+  button <span class="st">&quot;I give up&quot;</span> <span class="kw">do</span>
+    banner <span class="st">&quot;Nice belt.&quot;</span>
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="do-something-to-others">
+<h1>Do something to others</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  title <span class="st">&quot;What did the zero&quot;</span>
+  title <span class="st">&quot;say to the eight?&quot;</span>
+  punchline = banner <span class="st">&quot;Nice belt.&quot;</span>
+  punchline.hide
+  button <span class="st">&quot;I give up&quot;</span> <span class="kw">do</span>
+    punchline.show
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="do-something-later">
+<h1>Do something later</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  title <span class="st">&quot;What did the zero&quot;</span>
+  title <span class="st">&quot;say to the eight?&quot;</span>
+  give_up = button <span class="st">&quot;I give up&quot;</span>
+  punchline = banner <span class="st">&quot;Nice belt.&quot;</span>
+  punchline.hide
+  give_up.click <span class="kw">do</span>
+    punchline.show
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="play-hard-to-get">
+<h1>Play hard to get</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">b = button <span class="st">&quot;:P&quot;</span> <span class="kw">do</span>
+  left = rand(width)
+  top = rand(height)
+  b.move left, top
+<span class="kw">end</span></code></pre>
+</section>
+<section class="titleslide slide level1" id="hackety-art"><h1>Hackety ♥ Art</h1></section><section class="slide level2" id="shapes">
+<h1>Shapes</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  stroke goldenrod
+  strokewidth <span class="dv">3</span>
+  fill hotpink
+  oval <span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">200</span>
+  fill yellowgreen
+  rect <span class="dv">200</span>, <span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">150</span>
+  fill lightsteelblue
+  star <span class="dv">400</span>, <span class="dv">150</span></code></pre>
+</section><section class="slide level2" id="section-11">
+
+<figure>
+<img src="shapes.png"><figcaption></figcaption>
+</figure>
+</section><section class="slide level2" id="pinwheel">
+<h1>Pinwheel</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  sirius = star <span class="dv">400</span>, <span class="dv">150</span>
+  animate <span class="kw">do</span> |frame|
+    sirius.remove
+    rotate frame
+    sirius = star <span class="dv">400</span>, <span class="dv">150</span>
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="freeform-drawing">
+<h1>Freeform drawing</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  shape <span class="kw">do</span>
+    stroke cornflowerblue
+    strokewidth <span class="dv">4</span>
+    move_to <span class="dv">100</span>, <span class="dv">30</span>
+    line_to <span class="dv">400</span>, -<span class="dv">20</span>
+    line_to <span class="dv">300</span>, <span class="dv">400</span>
+    line_to <span class="dv">120</span>, <span class="dv">300</span>
+    line_to <span class="dv">100</span>, <span class="dv">30</span>
+  <span class="kw">end</span></code></pre>
+</section><section class="slide level2" id="section-12">
+
+<figure>
+<img src="shape-freeform.png"><figcaption></figcaption>
+</figure>
+</section><section class="slide level2" id="images">
+<h1>Images</h1>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">  background dimgray
+  fill darkgreen
+  nostroke
+  rect <span class="dv">0</span>, <span class="dv">400</span>, <span class="dv">600</span>, <span class="dv">100</span>
+  image <span class="st">&quot;/Users/eric/mateo.png&quot;</span>,
+    <span class="st">:left</span> =&gt; <span class="dv">300</span>, <span class="st">:top</span> =&gt; <span class="dv">112</span></code></pre>
+</section><section class="slide level2" id="section-13">
+
+<figure>
+<img src="mateo.png"><figcaption></figcaption>
+</figure>
+</section>
 <style>
   body {
     border-radius: 4px;
