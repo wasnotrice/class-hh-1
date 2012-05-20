@@ -4,7 +4,7 @@ require 'rake/clean'
 # -------------
 SOURCE_DIR = 'source'
 # Use all directories in source directory 
-SOURCE_DIRS = FileList['basics', 'turtle', 'buttons', 'text', 'slots', 'art'].pathmap("#{SOURCE_DIR}/%p") 
+SOURCE_DIRS = FileList['basics', 'turtle', 'text', 'slots', 'buttons', 'art'].pathmap("#{SOURCE_DIR}/%p") 
 SOURCE = FileList[*(SOURCE_DIRS.pathmap("%p/*.md"))]
 BUILD_DIR = 'slides'
 TARGET = "#{BUILD_DIR}/slides.html"

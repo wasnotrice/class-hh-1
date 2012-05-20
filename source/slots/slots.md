@@ -31,3 +31,33 @@ end
 ---
 
 ![](stacks-are-towers.png)
+
+## Slots within slots ##
+
+``` ruby
+  flow do
+    stack :width => 200 do
+      subtitle "Love"
+      para "Frogs"
+      flow do
+        para "Ice"
+        para "cream"
+      end
+    end # continued...
+```
+
+
+## Slots within (cont.) ##
+
+``` ruby
+    stack :width => 200 do
+      subtitle "Hate"
+      para "Roadkill"
+      para "Bullies"
+    end
+  end
+```
+
+---
+
+![](love-hate.png)

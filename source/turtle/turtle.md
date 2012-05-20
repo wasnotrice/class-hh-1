@@ -4,12 +4,15 @@
 
 ``` ruby
 Turtle.start do
-  forward 100
-  turnleft 120
-  forward 100
-  turnleft 120
-  forward 100
+  3.times do
+    forward 100
+    turnleft 120
+  end
 end
 ```
+
+---
+
+![](triangle.png)
 
 

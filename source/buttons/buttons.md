@@ -1,26 +1,44 @@
 # Hackety ♥ Buttons #
 
-## Saucy buttons ##
+## Hello button ##
 
 ``` ruby
-button "Don't click"
+button "Hi"
 ```
 
 ## Ok, so _do_ something ##
 
 ``` ruby
-button "Don't click" do
-  alert "Hey! No fair!"
-end
+  title "What did the zero"
+  title "say to the eight?"
+  button "I give up" do
+    banner "Nice belt."
+  end
 ```
 
-## Be the button ##
+## Do something to others ##
 
 ``` ruby
-b = button "Don't click" do
-  alert "Fine. Bye."
-  b.remove
-end
+  title "What did the zero"
+  title "say to the eight?"
+  punchline = banner "Nice belt."
+  punchline.hide
+  button "I give up" do
+    punchline.show
+  end
+```
+
+## Do something later ##
+
+``` ruby
+  title "What did the zero"
+  title "say to the eight?"
+  give_up = button "I give up"
+  punchline = banner "Nice belt."
+  punchline.hide
+  give_up.click do
+    punchline.show
+  end
 ```
 
 ## Play hard to get ##

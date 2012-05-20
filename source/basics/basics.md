@@ -27,17 +27,17 @@ end
 
 ![](wonderful-things.png)
 
-## See errors ##
+## When things go wrong ##
 
-Control-/ (or Command-/)
+![](console-menu.png)
 
 ---
 
 ![](error-console.png)
 
-## Read the manual ##
+## To learn more ##
 
-Control-m (or Command-m)
+![](manual-button.png)
 
 ---
 

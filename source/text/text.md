@@ -28,6 +28,8 @@ para "and on"
 
 ---
 
+![](on-and-on.png)
+
 ## Available in 7 sizes ##
 
 ``` ruby
